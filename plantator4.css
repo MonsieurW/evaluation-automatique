@@ -31,63 +31,68 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
 	#trifiltre div{display:block;}
 	
 	#filtre,#tri{border: 1px solid black;
-    border-radius: 5px;padding: 2px; }
-	#filtre{ width: 60%;  }
+    border-radius:5px;padding: 2px; }
+	#filtre{ width:60%;  }
 	#tri{  width: 20%;   }
 	h2{text-align:center; font-size: 18px;    background: #E4E4E4;}
 	
-	h3{display:inline-block; font-size: 16px;cursor:pointer;}
-	 #filtre div,#tri div, #filtrer,#filtresactifs span{cursor:pointer; 
+	h3{display:inline-block; font-size:16px;cursor:pointer;}
+	 #filtre div,#tri div, #filtrer,#filtresactifs span:not(.poubelle){cursor:pointer; 
 	display:inline-block;    background: #FFB7E5;border-radius:5px;margin:2px 4px; padding: 5px;
     text-align: center;}
 	#filtre select{display:block;    width: 100%;}
-	#filtresactifs span{background:#EEEEEE;margin:0px 1px;}
-	
-	
+	section #filtresactifs span:not(.poubelle){background:#EEEEEE;margin:0px 1px;}
+	.poubelle{}
+	#aide{    font-size: 50px;
+    cursor: pointer;}
+	.aide{display:none; top: 80px;position: absolute;
+    top: 146px; left: 10%;
+    font-size: 19px;
+    width: 80%;
+        border-radius: 10px;
+    background: white;
+    box-shadow: 1px 0px 40px #949494;z-index:50;}
 
 	.actif{    color: white;
     text-shadow: 0px 0px 10px black;}
 	li{ list-style-type: none;font-size:11px;}
 
-	
-#catalogue{}
+
 
 .normal tr{   height: 55px;
     position: relative;
     width: 200%;padding:0px;
-    box-shadow: 1px 1px 5px grey;margin:10px 0px;display: block;
-}
-	tr td,tr h6{height: 55px;display:inline-block;     vertical-align: top;cursor:pointer;    box-shadow: 1px 1px 5px;
-    }
+    box-shadow: 1px 1px 5px grey;margin:10px 0px;display: block;}
+	
+	tr td,tr h6{height: 55px;display:inline-block;     vertical-align: top;cursor:help;    box-shadow: 1px 1px 5px;font-family: FontAwesome;position:relative;width:70px;}
 	tr{padding:50px 0px;height:initial;margin-bottom:10px;}
-	tr h6{z-index:30;  position:relative;
-   font-size: 13px;
-    width: 140px;   }
+	tr h6{z-index:30; font-size: 13px;  width: 140px;   }
 	tr h6 div{display:block;overflow: hidden;text-align:left;}
 	tr h6 span:nth-child(1){height:34px;}
-	
-	
 
- td{font-family: FontAwesome;position:relative;width:70px;}
  .noms{ width: 100px;}
 	.nom{overflow: hidden;
     height: 41px;
     font-size: 18px;
-    font-family: Raleway;
-	}.famille{font-size: 11px;font-style: italic;    background: #EFEFEF;}
-	 .tools{width:40px;}
+    font-family: Raleway;}
+	.famille{font-size: 11px;font-style: italic;    background: #EFEFEF;}
+	.nomlatin{display:none;}
+	.vie{display:none;}
+	.multi{font-size:12px;}
+	 .tools{    width: 24px;
+    box-shadow: none;}
 	tr .lesmois{width:initial;opacity:0.1; margin-left: 9px;box-shadow:none;display:block;}
 	tr .calendar{width:500px;}
 	td  div,td span{font-size:15px;text-align:center;font-family: FontAwesome;}
-		tr .calendar div{position:absolute;width:40px;}
+		tr .calendar div{position:absolute;width:40px;top:0px;}
 		tr .calendar span{position:absolute;}
 		#catalogue .modedition{width:100%;}
 	.modedition span{display:inline;}
 	.tools aside{width:150px;text-align:left;}
 	.tools aside .calendar{width:initial;}
-	.commentaire{font-size:10px;}	
+	.commentaire,.utilisation,.usagemedic{font-size:10px;}	
 	.edit{cursor:pointer;}	
-
+	.compagnons div{font-size: 25px;}
 
 .commento{top: 56px;
     position: absolute;
@@ -96,11 +101,10 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
     padding: 2px;
     box-shadow: 3px 3px 10px black;
     border-radius: 5px;
-   text-align:center;width:150%;}
-	#mois.commento{text-align:left;width:105%;}
-	#close{font-weight: bold;    top: 0px;
-    right: 0px;
-			font-size: 20px;
+   text-align:center;width: 300%;
+    margin-left: -100%;}
+	#mois.commento{text-align:left;width:105%; margin-left:0px;}
+	.close{font-weight: bold; 			font-size: 20px;
 			right: -12px;
 			top: -14px;
 			text-shadow: 1px 1px 5px black;
@@ -117,13 +121,6 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
 	.f4,.f9,.f14,.f19,.f24{color:#6D4405;}
 	.f5,.f10,.f15,.f20,.f25{color:#640075;}
 	
-	
-	
-	
-	
-	
-			
-	
 	.modedition div:not(.tiroir){    display: inline-block;
     height:initial;min-height: 50px;
     vertical-align: top;
@@ -135,14 +132,19 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
 	.dbfixe .pareil{display:none;}
 	.pareil{background:#3BF53B;opacity:0.3;}
 	.differe{background:#ff8300;opacity:1;}
+	#multi,#type{text-align: left;}
 	#associe,#antiassocie{ width: 500px;}
+	#catalogue #utilisation{width: 150px;    text-align: left;}
+	#catalogue #usagemedic{width: 300px;column-count:2;    text-align: left;}
 	.modedition{    background: floralwhite;}
-	.dbfixe{margin-top: 50px;}
+	.dbfixe{margin-top: 50px;background:#E6E6E6}
 	.dbfixe div{background:#F3F3F3;}
 	
 
 	
 	.modedition input,.modedition select{width:95%;font-size:13px;font-family: FontAwesome;}
+	
+	.modedition .utilisation{width:}
 	
 	label{display:block;font-family:FontAwesome;}
 	input.chk{display:inline;width: 20px;z-index:45;}
@@ -169,8 +171,8 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
     background: #02FF00;
     border-radius: 15px;}
 	
-	footer{position:fixed; bottom:0px;background:white;font-size:10px;    box-shadow: 1px 1px 5px black;width:100%;text-align:right;    z-index: 50;}
-	footer a{font-size:10px;margin:5px;}
+	footer{background:white;font-size:10px;    box-shadow: 1px 1px 5px black;width:100%;text-align:right;    z-index: 50;}
+	footer a{text-decoration:none;margin:5px;}
 	
 	
 	#edit article{position:static;height:initial;}
