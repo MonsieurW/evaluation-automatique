@@ -82,7 +82,7 @@ champsdb={
 		'moisflo':{
 			type:'mois',img:'&#xf1e9;',expl:'Floraison ',top:10,gpe:'calendar',vizib:'oui'},
 		'multi':{
-			expl:'multiplication par ',type:'multiindex',lgd:['','bouture','division','greffe','marcottage','rejet','semis','semis spontané'],gpe:'vies',vizib:'oui'},
+			expl:'multiplication par ',type:'multiindex',lgd:['','bouture','division','greffe','marcottage','rejet','semis','semis spontané'],gpe:'solriche',vizib:'oui'},
 		'nom':{
 			type:'text',avt:'',aps:'',expl:'nom usuel ',gpe:'noms',vizib:'oui'},
 		'nomlatin':{
@@ -104,37 +104,39 @@ champsdb={
 		'rendement':{
 			expl:'Nombre de kg/m² lors de la récolte',type:'nbr',img:'' ,avt:'',aps:'kg/m²',gpe:'sol',vizib:'oui'},
 		'repiq':{
-			type:'mois',img:'Rq',expl:'Repiquage ',top:11,gpe:'calendar',vizib:'oui'},
+			type:'mois',img:'Rq',expl:'Repiquage',top:11,gpe:'calendar',vizib:'oui'},
 		'semisext':{
-			type:'mois',img:'<img src="img/semiext.png" alt="semis exterieur"/>',expl:'Semis extérieur ',top:0,gpe:'calendar',vizib:'oui'},
+			type:'mois',img:'<img src="img/semiext.png" alt="semis exterieur"/>',expl:'Semis extérieur',top:0,gpe:'calendar',vizib:'oui'},
 		'semisabri':{
-			type:'mois',img:'Sa',expl:'Semis abri ',top:0,gpe:'calendar',vizib:'oui'},
+			type:'mois',img:'Sa',expl:'Semis abri',top:0,gpe:'calendar',vizib:'oui'},
 		'semisint':{
-			type:'mois',img:'Si',expl:'Semis intérieur ',top:0,gpe:'calendar',vizib:'oui'},
+			type:'mois',img:'Si',expl:'Semis intérieur',top:0,gpe:'calendar',vizib:'oui'},
 		'solriche':{
-			type:'picto',expl:'besoins en nutriments ',lgd:['','faibles','moyens','élevés'],img:['','&#xf006;','&#xf123;','&#xf005;'],gpe:'solriche',vizib:'oui'},
+			type:'picto',expl:'besoins en nutriments',lgd:['','faibles','moyens','élevés'],img:['','&#xf006;','&#xf123;','&#xf005;'],gpe:'solriche',vizib:'oui'},
 		
 		'soleil':{
-			type:'picto',expl:'ensoleillement ',lgd:['','important','moyen','faible'],img:["",'&#xf185;','&#xf185;/&#xf0c2;','&#xf0c2;'],gpe:'soleil',vizib:'oui'},
+			type:'picto',expl:'ensoleillement',lgd:['','important','moyen','faible'],img:["",'&#xf185;','&#xf185;/&#xf0c2;','&#xf0c2;'],gpe:'soleil',vizib:'oui'},
 		
 	
 		'Tmin':{
-			expl:'Température mini=',type:'nbrnul',avt:'&#xf069;',aps:'°C',gpe:'soleil',vizib:'oui'},
-		
+			expl:'Température mini=',type:'nbrnul',avt:'&#xf069;',aps:'°C',gpe:'soleil',vizib:'oui'
+			},
+		'Tlevee':{
+			expl:'Température de levée des graines',type:'nbrnul',avt:'&#xf069;',aps:'°C',gpe:'semis',vizib:'peu'},
 		'tpslevee':{
 			expl:'Nombre de jours de la graine à la plantule',type:'nbr',img:'',avt:'lève en ',aps:'jours',gpe:'semis',vizib:'peu' } ,
 		 'tpsconserv':{
 			expl:'Durée de conservation des semences',type:'nbr',img:'',gpe:'autres',vizib:'oui',avt:'',aps:'ans' } ,
 		'usagemedic':{
-			expl:'usage médical: ',type:'multiindex',lgd:['','Anesthésiant','Antiseptique','Anti-inflammatoire','Astringent','Cœur et vaisseaux','Coupe-faim','Dermatologie','Digestion','Diététique','Diurétique','Insomnie','Lactation','Œdème','Parasites','Poumons','Sédatif','Sclérose','Vulnéraire'],gpe:'util',vizib:'oui'},	
+			expl:'usage médical',type:'multiindex',lgd:['','Anesthésiant','Antiseptique','Anti-inflammatoire','Astringent','Cœur et vaisseaux','Coupe-faim','Dermatologie','Digestion','Diététique','Diurétique','Insomnie','Lactation','Œdème','Parasites','Poumons','Sédatif','Sclérose','Vulnéraire','Febrifuge'],gpe:'util',vizib:'oui'},	
 		'utilisation':{
-			expl:'Utilisations de la plante',type:'multiindex',lgd:['','bois de chauffe','bois d\'oeuvre','construction','couverture hiver','engrais','fertilisateur de sol','insecticide','paillage','refuge d\'insecte','vannerie/textile','parfum','brise-vent'],gpe:'util',vizib:'oui'} ,
+			expl:'Utilisations de la plante',type:'multiindex',lgd:['','bois de chauffe','bois d\'oeuvre','construction','couverture hiver','engrais','fertilisateur de sol','insecticide','paillage','refuge animal','vannerie/textile','parfum','brise-vent','fourrage','phytoépuration'],gpe:'util',vizib:'oui'} ,
 		'type':{
-			expl:'comestible: ',type:'pictomulti',lgd:['','feuille','fruit','fleur','racine','tige/sève'],img:['','&#xf06c;','&#xf094;','&#xf1e9;','&radic;','I'],gpe:'vies',vizib:'oui'},
+			expl:'partie comestible',type:'pictomulti',lgd:['','feuille','fruit','fleur','racine','tige/sève'],img:['','&#xf06c;','&#xf094;','&#xf1e9;','&radic;','I'],gpe:'vies',vizib:'oui'},
 		'vie':{
-			type:'nbr',avt:'',aps:'an(s)',expl:'espérance de vie ',gpe:'vies',vizib:'oui'},
+			type:'nbr',avt:'',aps:'an(s)',expl:'espérance de vie',gpe:'vies',vizib:'oui'},
 		'vivace':{
-			type:'bool',1:'vivace&#xf0e2;',0:"annuelle",expl:'Caractère vivace ',gpe:'vies',vizib:'oui'}
+			type:'bool',1:'vivace&#xf0e2;',0:"annuelle",expl:'Caractère vivace',gpe:'vies',vizib:'oui'}
 };
 
 titreschoisis=['noms','vies','calendar','solriche','enver','soleil','compagnons','sol','util','semis','autres'];
@@ -192,20 +194,20 @@ criterefiltre={
 	'vivace':{expl:'Vivace?',
 		typ:'val',values:{0:'annuelle',1:'vivace'}},
 	'hauteur':{expl:'Hauteur',
-		typ:'categorie',values:{'0_15':'couvre-sol',
-					'15_100':'petite plante',
-					'100_200':'arbuste',
-					'200_10000':'arbre'}},
+		typ:'categorie',values:{'0_30':'couvre-sol',
+					'30_150':'petite plante',
+					'150_300':'arbuste',
+					'300_10000':'arbre'}},
 	'utilisation':{expl:"Besoin en nutriments",
 				typ:'val',values:{
 					1:'faible',2:'moyen',3:'élevé'}},	
 	'usagemedic':{
-			expl:'Medicinal ',typ:'val',values:{0:'',1:'Anesthésiant',2:'Antiseptique',3:'Anti-inflammatoire',4:'Astringent',5:'Cœur et vaisseaux',6:'Coupe-faim',7:'Dermatologie',8:'Digestion',9:'Diététique',10:'Diurétique',11:'Insomnie',12:'Lactation',13:'Œdème',14:'Parasites',15:'Poumons',16:'Sédatif',17:'Sclérose',18:'Vulnéraire'}},	
+			expl:'Medicinal ',typ:'multiindex',values:{0:'',1:'Anesthésiant',2:'Antiseptique',3:'Anti-inflammatoire',4:'Astringent',5:'Cœur et vaisseaux',6:'Coupe-faim',7:'Dermatologie',8:'Digestion',9:'Diététique',10:'Diurétique',11:'Insomnie',12:'Lactation',13:'Œdème',14:'Parasites',15:'Poumons',16:'Sédatif',17:'Sclérose',18:'Vulnéraire',19:'Febrifuge'}},	
 	'utilisation':{
-			expl:'Utilisation ',typ:'multiindex',values:{0:'',1:'bois de chauffe',2:'bois d\'oeuvre',3:'construction',4:'couverture hiver',5:'engrais',6:'fertilisateur de sol',7:'insecticide',8:'paillage',9:'refuge d\'insecte',10:'vannerie/textile'}} ,	
-	'solriche':{expl:"Besoin en nutriments",
+			expl:'Utilisation ',typ:'multiindex',values:{0:'',1:'bois de chauffe',2:'bois d\'oeuvre',3:'construction',4:'couverture hiver',5:'engrais',6:'fertilisateur de sol',7:'insecticide',8:'paillage',9:'refuge animal',10:'vannerie/textile',11:'parfum',12:'brise-vent',13:'fourrage',14:'phytoépuration'}} ,	
+	'soleil':{expl:"Ensoleillement",
 				typ:'val',values:{
-					1:'faible',2:'moyen',3:'élevé'}},
+					1:'important',2:'moyen',3:'faible'}}
 	
 };
 
@@ -370,24 +372,5 @@ function clefsordonneesnbr(critere){
 	});
 }
 
-/*function aide(){
-contenu="<h1>Bienvenue sur le plantator!</h1>Tu peux obtenir des informations en cliquant sur ce que tu ne comprends pas.<br/>Dans le plantator, tout est open-source et libre de droit! Si tu es motivé pour aider <a style='color:cyan' href='http://padlet.com/adressedallan/w54pkq3y9p75'>viens voir par là</a> ou <a href='http://padlet.com/adressedallan/mrgogmsycyur'>t'exprimer par là</a> <br/>Tu peux compléter les infos manquantes grâce au bouton <span class='awsm edit' style='display:inline'>'"+pictos.edition+"'</span> pour faire plaisir aux suivants! Pour la recherche d'un nom particulier tape Control+F (sous Windows) ou Cmd+F (sous Mac)";
-affchbulle(contenu,$('#logo'),'titre')
 
-}
-*/
-/*function affchbulle(contenu,obj,type){
-	$('.actif').removeClass('actif');
-	obj.addClass('actif');
-	x=obj.offset().left;
-	if(type=='titre'){
-	content='<div style="left:'+x+'px;top:59px;position:fixed">'+contenu+'<span id="close">X</span></div>';
-	}
-	else{
-	y=obj.offset().top;//console.log(x+','+y);
-	content='<div style="left:'+x+'px;top:'+(y+40)+'px">'+contenu
-	+'<span id="close">X</span></div>';}
-	$('#comment').html(content);
-}
-*/
 	

@@ -3,7 +3,7 @@ body{padding-bottom:100px;}
 .awsm{font-family: FontAwesome;text-align:center;font-weight: normal;vertical-align: top;}
 #logo{width:100px;cursor:pointer;}
 
-header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
+header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;    width: 110%;}
 	header aside{display:inline-block;    vertical-align: top;margin-left:5px;}
 	
 	h5{     width: 38px;
@@ -52,6 +52,8 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
         border-radius: 10px;
     background: white;
     box-shadow: 1px 0px 40px #949494;z-index:50;}
+	.infoplus,.infoplus sup{font-size: 50px;cursor:pointer;}
+	
 
 	.actif{    color: white;
     text-shadow: 0px 0px 10px black;}
@@ -79,19 +81,20 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
 	.nomlatin{display:none;}
 	.vie{display:none;}
 	.multi{font-size:12px;}
-	 .tools{    width: 24px;
+	 .tools{    width: 35px;
     box-shadow: none;}
+	td.tools span,.tools a{font-size: 24px;margin-bottom: 4px; display: inline-block;}
 	tr .lesmois{width:initial;opacity:0.1; margin-left: 9px;box-shadow:none;display:block;}
 	tr .calendar{width:500px;}
 	td  div,td span{font-size:15px;text-align:center;font-family: FontAwesome;}
 		tr .calendar div{position:absolute;width:40px;top:0px;}
+		tr .calendar .commento div{position:static;width: initial;}
 		tr .calendar span{position:absolute;}
 		#catalogue .modedition{width:100%;}
 	.modedition span{display:inline;}
 	.tools aside{width:150px;text-align:left;}
 	.tools aside .calendar{width:initial;}
 	.commentaire,.utilisation,.usagemedic{font-size:10px;}	
-	.edit{cursor:pointer;}	
 	.compagnons div{font-size: 25px;}
 
 .commento{top: 56px;
@@ -103,6 +106,7 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
     border-radius: 5px;
    text-align:center;width: 300%;
     margin-left: -100%;}
+	h4{display: inline-block;}
 	#mois.commento{text-align:left;width:105%; margin-left:0px;}
 	.close{font-weight: bold; 			font-size: 20px;
 			right: -12px;
@@ -113,13 +117,13 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
 			border-radius: 20px;
 			padding: 0px 5px;}	
 	
-	.edit{color:#FF00C6;}
+	.edit{color:#FF00C6;cursor:pointer;}
 	
-	.f1,.f6,.f11,.f16,.f21{color:blue;}
-	.f2,.f7,.f12,.f17,.f22{color:#006B77;}
-	.f3,.f8,.f13,.f18,.f23{color:#00772B;}
-	.f4,.f9,.f14,.f19,.f24{color:#6D4405;}
-	.f5,.f10,.f15,.f20,.f25{color:#640075;}
+	.f1,.f6,.f11,.f16,.f21,.f26,.f31,.f36,.f41,.f46,.f51{color:blue;}
+	.f2,.f7,.f12,.f17,.f22,.f27,.f32,.f37,.f42,.f47,.f52{color:#006B77;}
+	.f3,.f8,.f13,.f18,.f23,.f28,.f33,.f38,.f43,.f48,.f53{color:#00772B;}
+	.f4,.f9,.f14,.f19,.f24,.f29,.f34,.f39,.f44,.f49,.f54{color:#6D4405;}
+	.f5,.f10,.f15,.f20,.f25,.f30,.f35,.f40,.f45,.f50,.f55{color:#640075;}
 	
 	.modedition div:not(.tiroir){    display: inline-block;
     height:initial;min-height: 50px;
@@ -134,8 +138,7 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;}
 	.differe{background:#ff8300;opacity:1;}
 	#multi,#type{text-align: left;}
 	#associe,#antiassocie{ width: 500px;}
-	#catalogue #utilisation{width: 150px;    text-align: left;}
-	#catalogue #usagemedic{width: 300px;column-count:2;    text-align: left;}
+	#catalogue #usagemedic,#catalogue #utilisation{width: 300px;column-count:2;    text-align: left;}
 	.modedition{    background: floralwhite;}
 	.dbfixe{margin-top: 50px;background:#E6E6E6}
 	.dbfixe div{background:#F3F3F3;}
