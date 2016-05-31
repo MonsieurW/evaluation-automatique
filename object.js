@@ -69,7 +69,7 @@ champsdb={
 			expl:'espacement dans la ligne',type:'nbr',clr:'#D8D5D5',img:'',avt:'&#xf07d;',aps:'cm',gpe:'semis',vizib:'oui'} ,
 		
 		'eau':{
-			type:'color',expl:'sol ',clr:["",'#BFBB00','brown','#FF0000'],img:'&#xf1b3;',lgd:["",'sableux/léger','équilibré','argileux/lourd'],gpe:'sol',vizib:'oui'},
+			type:'color',expl:'sol ',clr:["",'#BFBB00','brown','#FF0000','#678CFB'],img:'&#xf1b3;',lgd:["",'sableux/léger','équilibré','argileux/lourd','plante aquatique'],gpe:'sol',vizib:'oui'},
 		'famille':{
 			type:'text',avt:'',aps:'',expl:'famille ',gpe:'noms',vizib:'oui'},	
 		
@@ -99,7 +99,7 @@ champsdb={
 			type:'mois',img:'Rd',expl:'Début de la récolte ',gpe:'calendar',vizib:'non'},
 		'recolteFin':{
 			type:'mois',img:'Rf',expl:'Fin de la récolte ',gpe:'calendar',vizib:'non'},
-		'RECOLTE':{
+		'recolte':{
 			type:'periode',debPer:'recolteDeb',finPer:'recolteFin',img:'<img src="img/rcolte.png" alt="récolte">',expl:'Récolte: ',top:22,gpe:'calendar',vizib:'oui'},
 		'rendement':{
 			expl:'Nombre de kg/m² lors de la récolte',type:'nbr',img:'' ,avt:'',aps:'kg/m²',gpe:'sol',vizib:'oui'},
@@ -119,7 +119,7 @@ champsdb={
 		
 	
 		'Tmin':{
-			expl:'Température mini=',type:'nbrnul',avt:'&#xf069;',aps:'°C',gpe:'soleil',vizib:'oui'
+			expl:'Température mini',type:'nbrnul',avt:'&#xf069;',aps:'°C',gpe:'soleil',vizib:'oui'
 			},
 		'Tlevee':{
 			expl:'Température de levée des graines',type:'nbrnul',avt:'&#xf069;',aps:'°C',gpe:'semis',vizib:'peu'},
@@ -130,7 +130,7 @@ champsdb={
 		'usagemedic':{
 			expl:'usage médical',type:'multiindex',lgd:['','Anesthésiant','Antiseptique','Anti-inflammatoire','Astringent','Cœur et vaisseaux','Coupe-faim','Dermatologie','Digestion','Diététique','Diurétique','Insomnie','Lactation','Œdème','Parasites','Poumons','Sédatif','Sclérose','Vulnéraire','Febrifuge'],gpe:'util',vizib:'oui'},	
 		'utilisation':{
-			expl:'Utilisations de la plante',type:'multiindex',lgd:['','bois de chauffe','bois d\'oeuvre','construction','couverture hiver','engrais','fertilisateur de sol','insecticide','paillage','refuge animal','vannerie/textile','parfum','brise-vent','fourrage','phytoépuration'],gpe:'util',vizib:'oui'} ,
+			expl:'Utilisations de la plante',type:'multiindex',lgd:['','bois de chauffe','bois d\'oeuvre','construction','couverture hiver','engrais','fertilisateur de sol','insecticide','paillage','refuge animal','vannerie/textile','parfum','brise-vent','fourrage','épuration','anti-erosion','structure du sol +','haie défensive','ornemental','pionnier','anti-insecte','anti-mamifère','antifongique','anti-concurrence'],gpe:'util',vizib:'oui'} ,
 		'type':{
 			expl:'partie comestible',type:'pictomulti',lgd:['','feuille','fruit','fleur','racine','tige/sève'],img:['','&#xf06c;','&#xf094;','&#xf1e9;','&radic;','I'],gpe:'vies',vizib:'oui'},
 		'vie':{
@@ -139,7 +139,7 @@ champsdb={
 			type:'bool',1:'vivace&#xf0e2;',0:"annuelle",expl:'Caractère vivace',gpe:'vies',vizib:'oui'}
 };
 
-titreschoisis=['noms','vies','calendar','solriche','enver','soleil','compagnons','sol','util','semis','autres'];
+titreschoisis=['noms','vies','calendar','solriche','enver','soleil'];//'compagnons','sol','util','semis','autres'
 titres={//quelles sont les différentes cases et leurs contenus
 	noms:{
 		desc:'Nom',colorbox:'#EFEFEF'},
@@ -181,7 +181,8 @@ criteretri={
 	'hauteur':'nbr',
 	'eau':'nbr',
 	'pH':'nbr',
-	'soleil':'nbr'
+	'soleil':'nbr',
+	'Tmin':'nbr'
 };
 
 
@@ -198,13 +199,13 @@ criterefiltre={
 					'30_150':'petite plante',
 					'150_300':'arbuste',
 					'300_10000':'arbre'}},
-	'utilisation':{expl:"Besoin en nutriments",
+	'eau':{expl:"Sol",
 				typ:'val',values:{
-					1:'faible',2:'moyen',3:'élevé'}},	
+					1:'sableux/léger',2:'équilibré',3:'argileux/lourd',4:'plante aquatique'}},	
 	'usagemedic':{
 			expl:'Medicinal ',typ:'multiindex',values:{0:'',1:'Anesthésiant',2:'Antiseptique',3:'Anti-inflammatoire',4:'Astringent',5:'Cœur et vaisseaux',6:'Coupe-faim',7:'Dermatologie',8:'Digestion',9:'Diététique',10:'Diurétique',11:'Insomnie',12:'Lactation',13:'Œdème',14:'Parasites',15:'Poumons',16:'Sédatif',17:'Sclérose',18:'Vulnéraire',19:'Febrifuge'}},	
 	'utilisation':{
-			expl:'Utilisation ',typ:'multiindex',values:{0:'',1:'bois de chauffe',2:'bois d\'oeuvre',3:'construction',4:'couverture hiver',5:'engrais',6:'fertilisateur de sol',7:'insecticide',8:'paillage',9:'refuge animal',10:'vannerie/textile',11:'parfum',12:'brise-vent',13:'fourrage',14:'phytoépuration'}} ,	
+			expl:'Utilisation ',typ:'multiindex',values:{0:'',1:'bois de chauffe',2:'bois d\'oeuvre',3:'construction',4:'couverture hiver',5:'engrais',6:'fertilisateur de sol',7:'insecticide',8:'paillage',9:'refuge animal',10:'vannerie/textile',11:'parfum',12:'brise-vent',13:'fourrage',14:'épuration',15:'anti-erosion',16:'structure du sol ++',17:'haie défensive',18:'ornemental',19:'pionnier',20:'anti-insecte',21:'anti-mamifère',22:'antifongique',23:'anti-concurrence'}} ,	
 	'soleil':{expl:"Ensoleillement",
 				typ:'val',values:{
 					1:'important',2:'moyen',3:'faible'}}

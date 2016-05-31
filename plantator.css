@@ -32,7 +32,7 @@ header{background:white;border-radius:5px;box-shadow:1px 1px 5px black;    width
 	
 	#filtre,#tri{border: 1px solid black;
     border-radius:5px;padding: 2px; }
-	#filtre{ width:60%;  }
+	#filtre{ width:50%;  }
 	#tri{  width: 20%;   }
 	h2{text-align:center; font-size: 18px;    background: #E4E4E4;}
 	
