@@ -130,7 +130,7 @@ champsdb={
 		'usagemedic':{
 			expl:'usage médical',type:'multiindex',lgd:['','Anesthésiant','Antiseptique','Anti-inflammatoire','Astringent','Cœur et vaisseaux','Coupe-faim','Dermatologie','Digestion','Diététique','Diurétique','Insomnie','Lactation','Œdème','Parasites','Poumons','Sédatif','Sclérose','Vulnéraire','Febrifuge'],gpe:'util',vizib:'oui'},	
 		'utilisation':{
-			expl:'Utilisations de la plante',type:'multiindex',lgd:['','bois de chauffe','bois d\'oeuvre','construction','couverture hiver','engrais','fertilisateur de sol','insecticide','paillage','refuge animal','vannerie/textile','parfum','brise-vent','fourrage','épuration','anti-erosion','structure du sol +','haie défensive','ornemental','pionnier','anti-insecte','anti-mamifère','antifongique','anti-concurrence'],gpe:'util',vizib:'oui'} ,
+			expl:'Utilisations de la plante',type:'multiindex',lgd:['','bois de chauffe','bois d\'oeuvre','construction','couverture hiver','engrais','fertilisateur de sol','insecticide','paillage','refuge animal','vannerie/textile','parfum','brise-vent','fourrage','épuration','anti-erosion','structure du sol +','haie défensive','ornemental','pionnier','anti-insecte','anti-mamifère','antifongique','anti-concurrence','mellifère','aromatique'],gpe:'util',vizib:'oui'} ,
 		'type':{
 			expl:'partie comestible',type:'pictomulti',lgd:['','feuille','fruit','fleur','racine','tige/sève'],img:['','&#xf06c;','&#xf094;','&#xf1e9;','&radic;','I'],gpe:'vies',vizib:'oui'},
 		'vie':{
@@ -205,7 +205,7 @@ criterefiltre={
 	'usagemedic':{
 			expl:'Medicinal ',typ:'multiindex',values:{0:'',1:'Anesthésiant',2:'Antiseptique',3:'Anti-inflammatoire',4:'Astringent',5:'Cœur et vaisseaux',6:'Coupe-faim',7:'Dermatologie',8:'Digestion',9:'Diététique',10:'Diurétique',11:'Insomnie',12:'Lactation',13:'Œdème',14:'Parasites',15:'Poumons',16:'Sédatif',17:'Sclérose',18:'Vulnéraire',19:'Febrifuge'}},	
 	'utilisation':{
-			expl:'Utilisation ',typ:'multiindex',values:{0:'',1:'bois de chauffe',2:'bois d\'oeuvre',3:'construction',4:'couverture hiver',5:'engrais',6:'fertilisateur de sol',7:'insecticide',8:'paillage',9:'refuge animal',10:'vannerie/textile',11:'parfum',12:'brise-vent',13:'fourrage',14:'épuration',15:'anti-erosion',16:'structure du sol ++',17:'haie défensive',18:'ornemental',19:'pionnier',20:'anti-insecte',21:'anti-mamifère',22:'antifongique',23:'anti-concurrence'}} ,	
+			expl:'Utilisation ',typ:'multiindex',values:{0:'',1:'bois de chauffe',2:'bois d\'oeuvre',3:'construction',4:'couverture hiver',5:'engrais',6:'fertilisateur de sol',7:'insecticide',8:'paillage',9:'refuge animal',10:'vannerie/textile',11:'parfum',12:'brise-vent',13:'fourrage',14:'épuration',15:'anti-erosion',16:'structure du sol ++',17:'haie défensive',18:'ornemental',19:'pionnier',20:'anti-insecte',21:'anti-mamifère',22:'antifongique',23:'anti-concurrence',24:'mellifère',25:'aromatique'}} ,	
 	'soleil':{expl:"Ensoleillement",
 				typ:'val',values:{
 					1:'important',2:'moyen',3:'faible'}}
